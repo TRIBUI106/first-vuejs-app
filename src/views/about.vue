@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-4xl mx-auto px-4 py-10 text-base-content">
-    <h1 class="text-4xl font-bold mb-6 text-center text-primary">About Me</h1>
+  <div class="max-w-6xl mx-auto px-4 py-10 text-base-content">
+    <h1 class="text-6xl font-bold mb-6 text-center text-primary">About Me</h1>
 
     <section class="mb-8">
       <h2 class="text-2xl font-semibold mb-2 text-secondary">Who I Am</h2>

@@ -3,11 +3,15 @@
     class="bg-base-200 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
     data-aos="fade-up"
   >
-    <a :href="links.live || links.source || links.download" target="_blank" rel="noopener noreferrer">
+    <a
+      :href="links.live || links.source || links.download"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img
         :src="img"
         alt="Project thumbnail"
-        class="w-full h-40 object-cover rounded-xl shadow-md hover:opacity-90 transition-opacity duration-300"
+        class="w-full h-60 object-cover rounded-xl shadow-md hover:opacity-90 transition-opacity duration-300"
       />
     </a>
 
@@ -25,30 +29,30 @@
         </span>
       </div>
 
-      <div class="flex gap-3 text-sm">
+      <div class="flex flex-wrap gap-3 text-sm">
         <a
           v-if="links.live"
           :href="links.live"
           target="_blank"
-          class="btn btn-sm btn-primary"
+          class="btn btn-sm rounded-xl shadow-sm bg-primary text-white hover:brightness-110 transition"
         >
-          See Live
+          🚀 See Live
         </a>
         <a
           v-if="links.download"
           :href="links.download"
           target="_blank"
-          class="btn btn-sm btn-accent"
+          class="btn btn-sm rounded-xl shadow-sm bg-secondary text-white hover:brightness-110 transition"
         >
-          Download App
+          ⬇️ Download
         </a>
         <a
           v-if="links.source"
           :href="links.source"
           target="_blank"
-          class="btn btn-sm btn-outline"
+          class="btn btn-sm rounded-xl shadow-sm border border-base-content text-base-content hover:bg-base-300 transition"
         >
-          Source Code
+          💻 Source Code
         </a>
       </div>
     </div>
@@ -59,23 +63,23 @@
 defineProps({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   img: {
     type: String,
-    required: true
+    required: true,
   },
   description: {
     type: String,
-    required: true
+    required: true,
   },
   techs: {
     type: String,
-    required: true
+    required: true,
   },
   links: {
     type: Object,
-    default: () => ({})
-  }
+    default: () => ({}),
+  },
 });
 </script>
