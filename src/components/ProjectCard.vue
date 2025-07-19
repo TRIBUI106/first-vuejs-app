@@ -34,7 +34,7 @@
           v-if="links.live"
           :href="links.live"
           target="_blank"
-          class="btn btn-sm rounded-xl shadow-sm bg-primary text-white hover:brightness-110 transition"
+          class="btn btn-sm rounded-xl shadow-sm bg-primary text-white hover:brightness-120 transition"
         >
           🚀 See Live
         </a>
@@ -42,7 +42,7 @@
           v-if="links.download"
           :href="links.download"
           target="_blank"
-          class="btn btn-sm rounded-xl shadow-sm bg-secondary text-white hover:brightness-110 transition"
+          class="btn btn-sm rounded-xl shadow-sm bg-secondary text-white hover:brightness-120 transition"
         >
           ⬇️ Download
         </a>
