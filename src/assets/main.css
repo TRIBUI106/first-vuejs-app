@@ -1,7 +1,2 @@
-div {
-  margin-top: 5rem;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
+@import "tailwindcss";
+@plugin "daisyui";
