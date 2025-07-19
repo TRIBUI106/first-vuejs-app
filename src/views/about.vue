@@ -39,71 +39,85 @@
     </section>
 
     <!-- Project Section -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-2 text-secondary">
+    <!-- Project Section -->
+    <section class="mb-20">
+      <h2 class="text-3xl font-bold text-secondary mb-12 text-center">
         Featured Projects
       </h2>
-      <ul class="list-disc list-inside leading-loose">
-        <li>
-          <strong><a href="#">G-RentX (Application):</a></strong>
-          A cross-platform game account rental desktop app built with
-          <strong>Java Swing</strong> and <strong>MariaDB</strong>. Features
-          include automated payments, QR code login, user role management, and
-          real-time transaction tracking. <a href="https://yeume-enterprise.edu.vn/assets/G-RentX-1.0.6.exe">try download app ?</a>
-          <br />
-        </li>
 
-        <li>
-          <strong><a href="https://yeume-enterprise.edu.vn/G-rentX/">G-RentX (Website):</a></strong>
-          A companion website for the G-RentX app, developed with
-          <strong>PHP</strong> and connected to the same MariaDB backend. Offers
-          web previews, QR integration, and transaction monitoring.
-          <br />
-        </li>
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+        <ProjectCard
+          title="G-RentX (Application)"
+          :img="grentxApp"
+          description="Cross-platform game account rental desktop app built with Java Swing & MariaDB. Features auto payment, QR login, user role management & real-time tracking."
+          techs="Java Swing, MariaDB, QR Code, REST API"
+          :links="{
+            download:
+              'https://yeume-enterprise.edu.vn/assets/G-RentX-1.0.6.exe',
+          }"
+        />
 
-        <li>
-          <strong><a href="https://ttoil-service.com/">TToil Service:</a></strong>
-          A web system for managing lubricant services with categorized
-          products, service listings, and contact support. Built with
-          <strong>HTML, CSS, JavaScript</strong>, and styled for a clean
-          business interface.
-          <br />
-        </li>
+        <ProjectCard
+          title="G-RentX (Website)"
+          :img="grentxWeb"
+          description="Companion site for G-RentX app, using PHP with shared MariaDB backend. Offers QR login, web preview & transaction monitoring."
+          techs="PHP, MariaDB, QR Code"
+          :links="{
+            live: 'https://yeume-enterprise.edu.vn/G-rentX/',
+          }"
+        />
 
-        <li>
-          <strong><a href="https://motorbike-cleaner.com/">Motorbike Cleaner:</a></strong>
-          A simple, responsive website for a motorcycle cleaning service.
-          Designed for easy offline service integration and booking. Built with
-          vanilla JS, HTML, and CSS.
-          <br />
-        </li>
+        <ProjectCard
+          title="TToil Service"
+          :img="ttoil"
+          description="Web system for managing lubricant services. Products are categorized and services well structured with clean UI."
+          techs="HTML, JavaScript, Tailwind CSS"
+          :links="{
+            live: 'https://ttoil-service.com/',
+          }"
+        />
 
-        <li>
-          <strong><a href="https://www.youtube.com/watch?v=pMI24s2Bl9k">Basic Inventory Management System:</a></strong>
-          A basic inventory app built by my team <i>(LoremIpsumDolar)</i> in 2
-          months. Users can import/export goods, manage suppliers, generate
-          receipts, and sort/filter by price or date. Includes Excel
-          import/export functionality.
-          <br />
-        </li>
+        <ProjectCard
+          title="Motorbike Cleaner"
+          :img="mtb"
+          description="Simple responsive website for motorcycle cleaning service. Built to support offline use and easy service booking."
+          techs="HTML, CSS, JavaScript"
+          :links="{
+            live: 'https://motorbike-cleaner.com/',
+          }"
+        />
 
-        <li>
-          <strong><a href="https://github.com/TRIBUI106/Data-Management-Java-Swing">Basic Human Resource Management System (First Project):</a></strong>
-          My first personal Java project using
-          <strong>Java Swing + JDBC + MariaDB</strong>. It manages employee data
-          with full CRUD features and a local database.
-          <br />
-        </li>
+        <ProjectCard
+          title="Inventory Management System"
+          :img="im"
+          description="App for inventory management – import/export goods, manage suppliers, generate receipts, and export to Excel."
+          techs="Java Swing, JDBC, Excel"
+          :links="{
+            live: 'https://www.youtube.com/watch?v=pMI24s2Bl9k',
+          }"
+        />
 
-        <li>
-          <strong><a href="https://github.com/TRIBUI106/WEB1043-All-Labs-Assignment/tree/main/AssignmentGD2%20-%20WEB1043"> Basic Purchase Order System:</a></strong>
-          A flower shop system using basic <strong>JavaScript</strong> and
-          <strong>localStorage</strong> for login, registration, and shopping
-          cart features. Focused on making a "more professional" UI compared to
-          my teammates at the time.
-          <br />
-        </li>
-      </ul>
+        <ProjectCard
+          title="HR Management System"
+          :img="hrm"
+          description="My first Java app – full CRUD for employee management using Java Swing and MariaDB."
+          techs="Java Swing, JDBC, MariaDB"
+          :links="{
+            source: 'https://github.com/TRIBUI106/Data-Management-Java-Swing',
+          }"
+        />
+
+        <ProjectCard
+          title="Basic Purchase Order (Flower Shop)"
+          :img="po"
+          description="Login, register & shopping cart with localStorage. Focused on better UI/UX than classmates."
+          techs="HTML, CSS, JavaScript, localStorage"
+          :links="{
+            source:
+              'https://github.com/TRIBUI106/WEB1043-All-Labs-Assignment/tree/main/AssignmentGD2%20-%20WEB1043',
+          }"
+        />
+      </div>
     </section>
 
     <section>
@@ -123,5 +137,12 @@
 </template>
 
 <script setup>
-const currentYear = new Date().getFullYear();
+import ProjectCard from "@/components/ProjectCard.vue";
+import grentxApp from "@/assets/img/grentx-app.png";
+import grentxWeb from "@/assets/img/grentx-web.png";
+import hrm from "@/assets/img/erp-hrm.png";
+import im from "@/assets/img/erp-im.png";
+import po from "@/assets/img/erp-po.png";
+import ttoil from "@/assets/img/ttoil-service.png";
+import mtb from "@/assets/img/motorbikecleaner.png";
 </script>

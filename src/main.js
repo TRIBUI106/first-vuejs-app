@@ -1,4 +1,10 @@
 import { createApp } from 'vue'
+import 'aos/dist/aos.css'
+import AOS from 'aos'
+
+AOS.init()
+// import thư viện AOS để sử dụng hiệu ứng cuộn trang
+// AOS.init() sẽ khởi tạo thư viện AOS
 
 import './assets/main.css' // import file CSS chính của ứng dụng
 import './assets/about.css' // import file CSS phụ của ứng dụng
