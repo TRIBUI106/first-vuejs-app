@@ -34,7 +34,7 @@
           v-if="links.live"
           :href="links.live"
           target="_blank"
-          class="btn btn-sm rounded-xl shadow-sm bg-primary text-white hover:brightness-120 transition"
+          class="btn btn-outline btn-info"
         >
           🚀 See Live
         </a>
@@ -42,7 +42,7 @@
           v-if="links.download"
           :href="links.download"
           target="_blank"
-          class="btn btn-sm rounded-xl shadow-sm bg-secondary text-white hover:brightness-120 transition"
+          class="btn btn-outline btn-info"
         >
           ⬇️ Download
         </a>
@@ -50,7 +50,7 @@
           v-if="links.source"
           :href="links.source"
           target="_blank"
-          class="btn btn-sm rounded-xl shadow-sm border border-base-content text-base-content hover:bg-base-300 transition"
+          class="btn btn-outline btn-info"
         >
           💻 Source Code
         </a>
