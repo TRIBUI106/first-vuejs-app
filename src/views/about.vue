@@ -38,6 +38,7 @@
       </ul>
     </section>
 
+    <!-- Project Section -->
     <section class="mb-8">
       <h2 class="text-2xl font-semibold mb-2 text-secondary">
         Featured Projects
