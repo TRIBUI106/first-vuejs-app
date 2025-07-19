@@ -15,7 +15,8 @@
     "prettier": "^3.6.2",
     "router": "^2.2.0",
     "vue": "^3.5.17",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.0",

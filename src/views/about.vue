@@ -17,9 +17,9 @@
     <section class="mb-8">
       <h2 class="text-2xl font-semibold mb-2 text-secondary">My Main Skills</h2>
       <ul class="list-disc list-inside leading-loose">
-        <li><strong>Languages:</strong> Java, JavaScript, PHP, SQL</li>
+        <li><strong>Languages:</strong> Java, JavaScript, PHP, Lua</li>
         <li>
-          <strong>Backend:</strong> Spring Boot, RESTful APIs, Stored Procedures
+          <strong>Backend:</strong> Spring Boot, RESTful APIs, PHP, NodeJS ( Discord Bot )
         </li>
         <li>
           <strong>Frontend:</strong> Vue 3, Tailwind CSS, DaisyUI (still
