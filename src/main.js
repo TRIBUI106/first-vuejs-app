@@ -1,5 +1,17 @@
 import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
 
-createApp(App).mount('#app')
+import './assets/main.css' // import file CSS chính của ứng dụng
+
+// import App, App ở đây là 1 tên biến mình tự tạo, nhưng mà đổi tên thành Caigivayne
+import Caigivayne from './App.vue'
+
+import router from './router'
+// import router từ file src/router/index.js, đây là nơi định nghĩa các đường dẫn của ứng dụng
+
+
+// createApp là hàm của vue để tạo ứng dụng Vue mới
+// mount là gán App vào phần tử có id là app trong HTML
+const app = createApp(Caigivayne)
+
+app.use(router) // sử dụng router trong ứng dụng
+app.mount('#app') // gán ứng dụng vào phần tử có id là app trong HTML
