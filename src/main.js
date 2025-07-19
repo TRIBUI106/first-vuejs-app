@@ -6,8 +6,8 @@ AOS.init()
 // import thư viện AOS để sử dụng hiệu ứng cuộn trang
 // AOS.init() sẽ khởi tạo thư viện AOS
 
-import './assets/main.css' // import file CSS chính của ứng dụng
-import './assets/about.css' // import file CSS phụ của ứng dụng
+import '@/assets/main.css' // import file CSS chính của ứng dụng
+import '@/assets/about.css' // import file CSS phụ của ứng dụng
 
 // import App, App ở đây là 1 tên biến mình tự tạo, nhưng mà đổi tên thành Caigivayne
 import Caigivayne from './App.vue'
