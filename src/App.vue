@@ -19,7 +19,9 @@
           </svg>
         </div>
       </div>
-      <a class="btn btn-ghost text-xl"><router-link to="/home">cz-learning-vuejs</router-link></a>
+      <a class="btn btn-ghost text-xl"
+        ><router-link to="/home">cz-learning-vuejs</router-link></a
+      >
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -29,9 +31,9 @@
     </div>
     <div class="navbar-end">
       <div class="avatar">
-        <div class="w-12 rounded">
+        <div class="w-12 rounded-full">
           <img
-            src="https://img.daisyui.com/images/profile/demo/batperson@192.webp"
+            src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp"
           />
         </div>
       </div>
