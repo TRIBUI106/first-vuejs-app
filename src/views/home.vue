@@ -11,7 +11,7 @@
     <p class="text-lg md:text-2xl text-gray-600 mb-6">
       Backend Developer | Home System Administrator
     </p>
-    <router-link to="/about" class="btn btn-soft btn-primary">
+    <router-link to="/about" class="btn btn-dash ">
       🚀 View My Work
     </router-link>
   </section>
